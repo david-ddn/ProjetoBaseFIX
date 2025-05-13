@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Interface de Negociação</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="form-ordem">
+        <!-- coloquei como select por conta do contexto da prova, pois em uma boleta real, o valor seria inserido pelo usuario -->
+        <label for="papel">Papel:</label>
+        <select id="papel">
+            <option>PETR4</option>
+            <option>VALE3</option>
+            <option>VIIA4</option>
+        </select>
+
+        <label for="preco">Preço:</label>
+        <input type="text" placeholder="0,00" id="preco" name="preco" onchange="calculaValor()"><br>
+
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" placeholder="0" step="1" min="1" max="100000" id="quantidade" name="quantidade" onchange="calculaValor()"><br>
+
+        <label for="valor">Valor Tot.:</label>
+        <label id="valor">0,00</label>
+
+        <button id="btn-send-buy" onclick="enviaOrdem(1)" class="buy">COMPRAR</button>
+        <button id="btn-send-sell" onclick="enviaOrdem(2)" class="sell">VENDER</button>
+    </div>
+    <div id="alert-container"></div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.form-ordem {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin-left: calc(50% - 160px);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 293px;
+}
+
+select {
+    width: 300px;
+}
+
+input, select {
+    padding: 5px 0px 5px 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+    input:read-only {
+        border: 0px;
+    }
+
+button {
+    width: calc(50% - 2.5px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button.buy {
+        background-color: #28a745;
+    }
+
+    button.sell {
+        background-color: #a72828;
+    }
+
+    button:hover {
+        opacity: 80%;
+    }
+
+
+#alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.alert {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    max-width: 300px;
+}
