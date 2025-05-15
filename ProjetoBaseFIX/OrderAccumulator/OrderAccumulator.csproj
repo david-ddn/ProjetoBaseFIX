@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="QuickFIXn.Core" Version="1.13.1" />
+    <PackageReference Include="QuickFIXn.FIX4.4" Version="1.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\EletronicTradingModel\EletronicTradingModel.csproj" />
   </ItemGroup>
 

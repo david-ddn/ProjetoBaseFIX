@@ -41,6 +41,8 @@
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.3.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="QuickFIXn.Core" Version="1.13.1" />
+    <PackageReference Include="QuickFIXn.FIX4.4" Version="1.13.0" />
   </ItemGroup>
 
 </Project>
