@@ -12,15 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="QuickFix">
-      <HintPath>..\bin\QuickFix.dll</HintPath>
-    </Reference>
-    <Reference Include="QuickFix.FIX44">
-      <HintPath>..\bin\QuickFix.FIX44.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="configs\QuickFixSessionClient.cfg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
